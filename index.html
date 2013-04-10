@@ -1,0 +1,136 @@
+<!doctype html><html lang="en"><head>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+  <meta charset="utf-8" />
+  <title>jQuery UI Tabs - Default functionality</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="jquery.zweatherfeed.min.js" type="text/javascript"></script>
+  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+  <link href="example.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+<script type="text/javascript">
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+<script type="text/javascript">
+
+$(document).ready(function () {
+	$('#test').weatherfeed(['CHXX0049','CHXX0116'], {
+		forecast: true
+	});
+});
+	
+$(document).ready(function () {
+	$('#test').weatherfeed(['SZXX0033','CHXX0008']);
+});
+</script> 
+<style>@charset "UTF-8";
+table, th, td {border: 0px;padding:0px;vertical-align:top;}	
+form { margin-bottom: 1em; }
+.weatherFeed {font-family:sans-serif;font-size: 90%;margin: 0em 0em;width: 240px;}
+.weatherFeed a {color: #888; }
+.weatherFeed a:hover {color: #000;text-decoration: none;}
+.weatherItem {padding: 0.8em;text-align: right;}
+.weatherCity {text-transform: uppercase; font-size: 130%;}
+.weatherTemp {font-size: 2.8em;font-weight: bold;}
+.weatherDesc, .weatherCity, .weatherForecastDay  { font-weight: bold; }
+.weatherDesc {margin-bottom: 0.4em; }
+.weatherRange, .weatherWind, .weatherLink, .weatherForecastItem {font-size: 0.8em; }
+.weatherLink, .weatherForecastItem {margin-top: 0.5em;text-align: left;}
+.weatherForecastItem {padding: 0.5em 0.5em 0.5em 80px;background-color: #fff;background-position:left center;}
+.weatherForecastDay {font-size: 1.1em; }
+.odd {background-color: #e8e8fc; }
+.even {background-color: #d4d4e8; }
+</style>  
+</head>
+<body>
+<div id="tabs">
+  <ul>
+    <li><a href="#tab1">Local</a></li>
+    <li><a href="#tab2">Print</a></li>
+    <li><a href="#tab3">Docs</a></li>
+    <li><a href="#tab4">Events</a></li>
+    <li><a href="#tab5">Ferry</a></li>
+    <li><a href="#tab6">Accom</a></li>
+    <li><a href="https://maps.google.com/maps/ms?msa=0&msid=200073663810992252651.0004d96b6096833780da3&ie=UTF8&t=m&source=embed&ll=31.765537,117.553711&spn=25.088582,39.506836&z=5">
+		                H7N9</a></li>
+  </ul>
+
+  
+  <div id="tab1">
+ 
+  </div>
+  
+  <div id="tab2">
+	  <a href="http://ip-pbx.myvnc.com/share/">All files</a>
+	  http://www.bloomberg.com/billionaires/2013-04-09/aaa
+  </div>
+  
+  <div id="tab3">
+	<form enctype="multipart/form-data" action="../cgi-bin/fileup.py" method="post">
+	    <p>Document: <input type="file" name="filename" value=""/>
+        <button type="submit" name="submit" value="Upload">Submit</button></p>
+    </form>  
+  </div><!--tab3-->
+  
+
+
+
+  <div id="tab4">
+	  <h4>Britcham <a href="http://www.britcham.com/events/listings/calendar">calendar</a></h4>
+<pre>
+Mines and Money Hong Kong -- 18-22 March
+Mines and Money Hong Kong is where mining companies from around the world come to raise capital in 
+Asia and meet with investors from Hong Kong and mainland China.
+
+Cementing its position as a major fixture on the global mining investment circuit, Mines and Money 
+Hong Kong 2013 will bring together over 3500 institutional investors, mining entrepreneurs, brokers 
+and investment analysts for five days of high-value networking, investment analysis and deal-making,
+from 18-22 March.
+http://www.minesandmoney.com/hongkong/
+</pre>
+</div><!--tab4-->
+
+
+
+
+  <div id="tab5">
+<style>
+#my-div{width:780px;height:780px;overflow:hidden;position:relative;}
+#my-ifr{position:absolute;top:-200px;left:0px;width:780px;height:780px;}
+</style> 
+<div id="my-div">
+	<iframe id="my-ifr" src="http://www.pitcl.com.hk/eng/html/ferry.htm" >
+	</iframe>
+</div>
+</div><!--tab5-->
+
+  <div id="tab6"><h4>Beijing</h4><pre>
+http://www.shangri-la.com/beijing/chinaworld/
+http://www.shangri-la.com/beijing/chinaworld/reservations/selectroomrate/
+Deluxe Room Starting from RMB 1,550 per night
+
+http://www.ritzcarlton.com/en/Properties/BeijingFinancialStreet/Default.htm
+2,288.00 CNY / Night Deluxe Room, Guest room, 1 King or 2 Double
+http://www.ritzcarlton.com/en/Properties/BeijingFinancialStreet/Reservations/Packages/Detail/bed_and_breakfast.htm
+Package: Starting at RMB 2,088 per night, Accommodation,Breakfast in Greenfish restaurant
+Subject to availability and cannot be combined with any other offer. 
+Advance reservations are required;Rate listed is per room, per night, single occupancy,
+and subject to 15% service charge.
+
+http://www.ritzcarlton.com/en/Properties/Beijing/Default.htm
+2,400.00 CNY / Night Deluxe Room, Guest room, 1 King or 2 Double
+</pre></div><!--tab6-->
+
+
+<table>
+<tr>
+<td><div id="test"></div></td>
+<td><img src="hkrail.gif.png" alt="hk map"></td>
+</tr>
+</table>
+
+</body>
+</html>

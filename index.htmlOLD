@@ -1,0 +1,85 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery UI Tabs - Default functionality</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="jquery.zweatherfeed.min.js" type="text/javascript"></script>
+  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+  <link href="example.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+<script type="text/javascript">
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+
+<script type="text/javascript">
+	
+$(document).ready(function () {
+	$('#test').weatherfeed(['CHXX0049','CHXX0116'], {
+		forecast: true
+	});
+});
+	
+$(document).ready(function () {
+	$('#test').weatherfeed(['SZXX0033','CHXX0008']);
+});
+</script> 
+<style>@charset "UTF-8";
+table, th, td {border: 0px;padding:0px;vertical-align:top;}	
+form { margin-bottom: 1em; }
+.weatherFeed {font-family:sans-serif;font-size: 90%;margin: 0em 0em;width: 240px;}
+.weatherFeed a {color: #888; }
+.weatherFeed a:hover {color: #000;text-decoration: none;}
+.weatherItem {padding: 0.8em;text-align: right;}
+.weatherCity {text-transform: uppercase; font-size: 130%;}
+.weatherTemp {font-size: 2.8em;font-weight: bold;}
+.weatherDesc, .weatherCity, .weatherForecastDay  { font-weight: bold; }
+.weatherDesc {margin-bottom: 0.4em; }
+.weatherRange, .weatherWind, .weatherLink, .weatherForecastItem {font-size: 0.8em; }
+.weatherLink, .weatherForecastItem {margin-top: 0.5em;text-align: left;}
+.weatherForecastItem {padding: 0.5em 0.5em 0.5em 80px;background-color: #fff;background-position:left center;}
+.weatherForecastDay {font-size: 1.1em; }
+.odd {background-color: #e8e8fc; }
+.even {background-color: #d4d4e8; }
+</style>  
+</head>
+<body>
+<div id="tabs">
+  <ul>
+    <li><a href="#tab1">Local</a></li>
+    <li><a href="#tab2">Print</a></li>
+    <li><a href="#tab3">Docs</a></li>
+  </ul>
+  
+  <div id="tab1">
+ 
+  </div>
+  
+  <div id="tab2">
+| <a href="pi25H8-2013a.doc">pi25H8-2013a.doc</a>  
+| <!--<a href="AsiaMiles.doc">AsiaMiles.doc</a>  
+|-->
+  </div>
+  
+  <div id="tab3">
+	<form enctype="multipart/form-data" action="../cgi-bin/fileup.py" method="post">
+	    <p>Document: <input type="file" name="filename" value=""/>
+        <button type="submit" name="submit" value="Upload">Submit</button></p>
+    </form>  
+  </div>
+  
+</div>
+
+<table>
+<tr>
+<td><div id="test"></div></td>
+<td><img src="hkrail.gif.png" alt="hk map"></td>
+</tr>
+</table>
+
+</body>
+</html>
